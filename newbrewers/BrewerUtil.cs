@@ -163,7 +163,7 @@ namespace newbrewers
                         if(b.Trim().Length > 0 && !b.Contains("該当なし") && !b.Contains("以下余白") && !b.Contains("税務署名") && !b.Contains("&nbsp;"))
                         {
                             //getBrewer(b.Replace("<tr>", "").Trim());
-                            var t = b.Replace("<td>", "").Replace("<td class=\"left\">", "").Replace("<td nowrap=\"nowrap\">", "").Replace("<td class=\"nowrap\">", "").Replace("<br />", "///").Replace("<br>", "///").Replace("</td>", "\n").Trim().Split('\n');
+                            var t = b.Replace("<td>", "").Replace("<td class=\"left\">", "").Replace("<td nowrap=\"nowrap\">", "").Replace("<td align=\"left\">", "").Replace("<td class=\"center\">", "").Replace("<td class=\"nowrap\">", "").Replace("<br />", "///").Replace("<br>", "///").Replace("</td>", "\n").Trim().Split('\n');
                             for(var i = 0; i < t.Length; i++)
                             {
                                 t[i] = t[i].Trim();
